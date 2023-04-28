@@ -10,7 +10,7 @@
   
   <ion-row>
     <ion-col size="12">
-      <ion-segment value="default">
+      <ion-segment value="brasil" (ionChange) = "selecionarCards($event)">
         
         <ion-segment-button value="brasil">
           <ion-label>Brasil</ion-label>
@@ -45,7 +45,7 @@
   </ion-row>
   
   <!-- Cards do Brasil -->
-  <ion-row>
+  <ion-row *ngIf="this.item_selecionado == 'brasil'">
     <ion-col size="4">
       <ion-card>
         <img src="https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1600">
@@ -67,7 +67,7 @@
   </ion-row>
 
   <!-- Cards da China -->
-  <ion-row>
+  <ion-row  *ngIf="this.item_selecionado == 'china'">
     <ion-col size="4">
       <ion-card>
         <img src="https://images.pexels.com/photos/1423580/pexels-photo-1423580.jpeg?auto=compress&cs=tinysrgb&w=1600">
@@ -89,7 +89,7 @@
   </ion-row>
 
 <!-- Cards India-->
-<ion-row>
+<ion-row  *ngIf="this.item_selecionado == 'india'">
   <ion-col size="4">
     <ion-card>
       <img src="https://images.pexels.com/photos/1260801/pexels-photo-1260801.jpeg?auto=compress&cs=tinysrgb&w=600">
@@ -111,7 +111,7 @@
 </ion-row>
 
 <!-- Cards jordania-->
-<ion-row>
+<ion-row  *ngIf="this.item_selecionado == 'jordania'">
   <ion-col size="4">
     <ion-card>
       <img src="https://images.pexels.com/photos/3214958/pexels-photo-3214958.jpeg?auto=compress&cs=tinysrgb&w=600">
@@ -133,7 +133,7 @@
 </ion-row>
 
 <!-- Cards italia-->
-<ion-row>
+<ion-row  *ngIf="this.item_selecionado == 'italia'">
   <ion-col size="4">
     <ion-card>
       <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600">
@@ -155,7 +155,7 @@
 </ion-row>
 
 <!-- Cards Peru-->
-<ion-row>
+<ion-row  *ngIf="this.item_selecionado == 'peru'">
   <ion-col size="4">
     <ion-card>
       <img src="https://images.pexels.com/photos/2929906/pexels-photo-2929906.jpeg?auto=compress&cs=tinysrgb&w=600">
@@ -177,7 +177,7 @@
 </ion-row>
 
 <!-- Cards Mexico-->
-<ion-row>
+<ion-row  *ngIf="this.item_selecionado == 'mexico'">
   <ion-col size="4">
     <ion-card>
       <img src="https://images.pexels.com/photos/12046436/pexels-photo-12046436.jpeg?auto=compress&cs=tinysrgb&w=600">
