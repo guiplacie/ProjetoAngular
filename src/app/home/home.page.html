@@ -8,20 +8,20 @@
 
 <ion-content [fullscreen]="true">
   <ion-row>
-    <input type="text" class="ajustar">
+    <ion-input type="text" class="ajustar">{{v2}}</ion-input>
   </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="full" color="light" mode="ios" (click)="exibir(105)">C</ion-button>
+        <ion-button expand="full" color="light" mode="ios" (click)="deletar()">C</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="light" mode="ios" (click)="exibir(106)">+/-</ion-button>
+        <ion-button expand="full" color="light" mode="ios" (click)="operacao('+/-')">+/-</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="light" mode="ios" (click)="exibir(107)">%</ion-button>
+        <ion-button expand="full" color="light" mode="ios" (click)="operacao('%')">%</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(100)">/</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="operacao('/')">/</ion-button>
       </ion-col>  
     </ion-row>    
   
@@ -36,7 +36,7 @@
         <ion-button expand="full" color="medium" mode="ios" (click)="exibir(9)">9</ion-button>
       </ion-col>
        <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(101)">*</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="operacao('*')">*</ion-button>
        </ion-col> 
      </ion-row>  
      
@@ -53,7 +53,7 @@
         <ion-button expand="full" color="medium" mode="ios" (click)="exibir(6)">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(102)">-</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="operacao('-')">-</ion-button>
       </ion-col>    
   </ion-row>
 
@@ -68,19 +68,19 @@
         <ion-button expand="full" color="medium" mode="ios" (click)="exibir(3)">3</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(103)">+</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="operacao('+')">+</ion-button>
       </ion-col>     
     </ion-row>
 
     <ion-row>
       <ion-col>
-        <ion-button expand="full" color="medium" mode="ios" (click)="exibir(109)">0</ion-button>
+        <ion-button expand="full" color="medium" mode="ios" (click)="exibir(0)">0</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(108)">,</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="virgula()">,</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" color="primary" mode="ios" (click)="exibir(104)">=</ion-button>
+        <ion-button expand="full" color="primary" mode="ios" (click)="resulconta()">=</ion-button>
       </ion-col>
     </ion-row>
 
