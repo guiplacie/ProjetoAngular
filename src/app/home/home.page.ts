@@ -8,9 +8,11 @@ import { IonicModule } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule],
+  
 })
+
 export class HomePage {
   exibir(numero: number) {
-		console.log(numero);
+		console.log();
 	}
 }
