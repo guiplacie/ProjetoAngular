@@ -1,4 +1,3 @@
-
 <ion-menu contentId="main-content" class="fundo">
   <ion-header>
     <ion-toolbar>
@@ -6,6 +5,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
+    <ion-button expand="full" color="warning" shape="round" routerLink="./homepage.html">home</ion-button><br>
     <ion-button expand="full" color="warning" shape="round" routerLink="/mario">Mario</ion-button><br>
     <ion-button expand="full" color="warning" shape="round" routerLink="/princesapeach">Princesa Peach</ion-button><br>
     <ion-button expand="full" color="warning" shape="round" routerLink="/luigi">Luigi</ion-button><br>
@@ -29,10 +29,25 @@
       <ion-buttons slot="start">
         <ion-menu-button color="warning"></ion-menu-button>
       </ion-buttons>
-      <ion-title>Inicio</ion-title>
+      <ion-title>Mario</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-        <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/05/26/2005858053-supermariobrosmovie.jpg" style="width: 100%; height: 100%;">
-  </ion-content>
+    <ion-row class="conteudo">
+      <ion-col>
+        <ion-card>
+          <img src="https://cdn.awsli.com.br/600x700/175/175683/produto/5294021/8befb43fe5.jpg" alt="">
+          <ion-card-content>
+            <p class="texto">
+              Profissão: Encanador <br>
+ Nacionalidade: Italiano (embora sua nacionalidade não seja mencionada nos jogos, a origem italiana de Mario foi estabelecida por meio de outras mídias, como filmes e desenhos animados) <br>
+ Aparência: Mario é geralmente retratado como um homem baixo e de estatura média, com cabelo e bigode pretos, vestindo um macacão azul, uma camiseta vermelha e um boné vermelho com um "M" na frente. <br>
+ Personalidade: Ele é retratado como um herói corajoso, determinado e otimista, sempre disposto a enfrentar desafios para salvar a Princesa Peach e o Reino do Cogumelo dos vilões. <br>
+ História: Mario fez sua primeira aparição no jogo "Donkey Kong" em 1981 e se tornou o protagonista de uma série de jogos populares, como "Super Mario Bros.", "Super Mario 64", "Super Mario Galaxy" e muitos outros. <br>
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+   </ion-content>
 </div>

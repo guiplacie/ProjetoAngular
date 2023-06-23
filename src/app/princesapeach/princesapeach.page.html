@@ -1,0 +1,59 @@
+<ion-menu contentId="main-content" class="fundo">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button expand="full" color="warning" shape="round" routerLink="/home">home</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/mario">Mario</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/princesapeach">Princesa Peach</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/luigi">Luigi</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/yoshi">Yoshi</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/bowser">Bowser</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/toad">Toad</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/wario">Wario</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/waluigi">Waluigi</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/princesadaisy">Princesa Daisy</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/rosalina">Rosalina</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routeLink="/donkeykong">Donkey Kong</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/diddykong">Diddy Kong</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/lakitu">Lakitu</ion-button><br>
+    <ion-button expand="full" color="warning" shape="round" routerLink="/shi">Shi Guy</ion-button><br>
+    <ion-button expand="full" color="medium" shape="round" routerLink="/sobre">Sobre</ion-button><br>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button color="warning"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Princesa Peach</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-row class="conteudo">
+      <ion-col>
+        <ion-card>
+          <img src="data:image/jpeg;base64,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" alt="">
+          <ion-card-content>
+            <p class="texto">
+             Nome: Princesa Peach Toadstool <br>
+Títulos alternativos: Princesa Peach, Princesa Toadstool <br>
+ Ocupação: Princesa do Reino do Cogumelo <br>
+ Aparência: A Princesa Peach é retratada como uma jovem princesa de cabelos loiros, olhos azuis e uma pele clara. Ela geralmente é vista usando um vestido cor-de-rosa longo, com detalhes decorativos e uma coroa na cabeça. <br>
+ Personalidade: A Princesa Peach é retratada como uma personagem amável, gentil e otimista. Ela é conhecida por sua bondade e compaixão, além de ser uma figura importante para o Reino do Cogumelo. <br>
+ Relação com Mario: A Princesa Peach é frequentemente retratada como a principal interesse romântico de Mario. Ela muitas vezes é capturada pelo vilão Bowser, levando Mario a embarcar em aventuras para resgatá-la. <br>
+ Papel nos jogos: A Princesa Peach aparece em vários jogos da franquia Mario, onde às vezes desempenha um papel jogável. Ela também é conhecida por suas habilidades de flutuação, como visto em jogos como "Super Mario Bros. 2". <br>
+              
+            </p>
+          </ion-card-content>
+        </ion-card>
+      
+    
+      </ion-col>
+    </ion-row>
+    
+  </ion-content>
+</div>
