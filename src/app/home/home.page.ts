@@ -17,7 +17,7 @@ export class HomePage {
   decimal=false;
   decimals=0;
 
-// o  
+// operação
   exibir(n: number) {
 		switch (this.numero) {
       case 'number':
